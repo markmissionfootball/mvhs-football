@@ -38,7 +38,24 @@ class ShellScaffold extends StatelessWidget {
 
     return Scaffold(
       body: child,
-      bottomNavigationBar: BottomNavigationBar(
+      bottomNavigationBar: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Container(
+            width: double.infinity,
+            color: DiabloColors.dark,
+            padding: const EdgeInsets.only(top: 4, bottom: 2),
+            child: const Text(
+              'powered by EndZoneAI',
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                color: Colors.white38,
+                fontSize: 9,
+                fontStyle: FontStyle.italic,
+              ),
+            ),
+          ),
+          BottomNavigationBar(
         currentIndex: index,
         onTap: (i) => _onTap(context, i),
         items: [
@@ -81,6 +98,8 @@ class ShellScaffold extends StatelessWidget {
             activeIcon: Icon(Icons.person),
             label: 'ME',
           ),
+        ],
+      ),
         ],
       ),
     );
