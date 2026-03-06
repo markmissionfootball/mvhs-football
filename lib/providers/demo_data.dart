@@ -1328,287 +1328,1180 @@ class DemoData {
   ];
 
 
-  // ── Hudl Game Films ─────────────────────────────────────────────
+  // ── Hudl Game Films (14 real games from 2023 season) ─────────────
 
   static final List<HudlFilm> hudlFilms = [
     HudlFilm(
       id: 'film_001',
-      gameId: 'game_002',
-      opponent: 'El Toro Chargers',
-      gameDate: DateTime(2025, 8, 29),
-      season: '2025',
+      gameId: 'game_2023_01',
+      opponent: 'El Camino',
+      gameDate: DateTime(2023, 8, 18),
+      season: '2023',
       level: 'varsity',
-      hudlVideoUrl: 'https://www.hudl.com/video/3/12345/abc001',
-      hudlVideoId: 'abc001',
-      totalPlays: 68,
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369456',
+      hudlVideoId: '9369456',
+      totalPlays: 181,
       importedBy: 'coach_001',
-      importedAt: DateTime(2025, 8, 30, 10, 15),
+      importedAt: DateTime(2023, 8, 19, 10, 0),
       status: FilmStatus.ready,
       summary: const FilmSummary(
         overview:
-            'Dominant win over El Toro. Offense clicked on all cylinders with a '
-            'balanced attack. Defense held opponents to under 200 total yards.',
+            'Explosive opener against El Camino. 405 total yards on 75 '
+            'offensive snaps. Ground game averaged 5.3 YPC with 5 TDs scored.',
         keyTakeaways: [
-          'Run game averaged 5.8 YPC behind strong O-line play',
-          'Secondary had 3 pass breakups and 1 interception',
-          'Red zone efficiency was 4/5 (80%)',
+          'Run game averaged 5.3 yards per carry on 38 attempts',
+          '5 offensive touchdowns scored',
+          'Balanced attack with effective play-action game',
         ],
-        teamGrades: {
-          'offense': 88.0,
-          'defense': 85.5,
-          'specialTeams': 76.0,
-        },
+        teamGrades: {'offense': 92.0, 'defense': 77.0, 'specialTeams': 75.0},
       ),
     ),
     HudlFilm(
       id: 'film_002',
-      gameId: 'game_003',
-      opponent: 'Tesoro Titans',
-      gameDate: DateTime(2025, 9, 5),
-      season: '2025',
+      gameId: 'game_2023_02',
+      opponent: 'Citrus Valley',
+      gameDate: DateTime(2023, 8, 25),
+      season: '2023',
       level: 'varsity',
-      hudlVideoUrl: 'https://www.hudl.com/video/3/12345/abc002',
-      hudlVideoId: 'abc002',
-      totalPlays: 72,
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369457',
+      hudlVideoId: '9369457',
+      totalPlays: 163,
       importedBy: 'coach_001',
-      importedAt: DateTime(2025, 9, 6, 9, 30),
+      importedAt: DateTime(2023, 8, 26, 10, 0),
       status: FilmStatus.ready,
       summary: const FilmSummary(
         overview:
-            'Tough loss to Tesoro in a back-and-forth game. Two costly turnovers '
-            'in the second half swung momentum. Defense played well but tired late.',
+            'Dominant offensive performance against Citrus Valley. 440 total '
+            'yards on 64 snaps. Passing attack was efficient at 65% completions.',
         keyTakeaways: [
-          'Turnovers in Q3 led to 10 unanswered points',
-          'Pass protection broke down on 3rd downs (3 sacks allowed)',
-          'Need to clean up pre-snap penalties (4 false starts)',
+          'Passing was 20/31 (65%) completions',
+          '5 offensive touchdowns scored',
+          '1 turnover needs to be addressed',
         ],
-        teamGrades: {
-          'offense': 62.0,
-          'defense': 74.5,
-          'specialTeams': 70.0,
-        },
+        teamGrades: {'offense': 90.0, 'defense': 76.0, 'specialTeams': 75.0},
       ),
     ),
     HudlFilm(
       id: 'film_003',
-      gameId: 'game_004',
-      opponent: 'Dana Hills Dolphins',
-      gameDate: DateTime(2025, 9, 12),
-      season: '2025',
+      gameId: 'game_2023_03',
+      opponent: 'Highland',
+      gameDate: DateTime(2023, 9, 1),
+      season: '2023',
       level: 'varsity',
-      hudlVideoUrl: 'https://www.hudl.com/video/3/12345/abc003',
-      hudlVideoId: 'abc003',
-      totalPlays: 65,
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369459',
+      hudlVideoId: '9369459',
+      totalPlays: 132,
       importedBy: 'coach_001',
-      importedAt: DateTime(2025, 9, 13, 11, 0),
+      importedAt: DateTime(2023, 9, 2, 10, 0),
       status: FilmStatus.ready,
       summary: const FilmSummary(
         overview:
-            'Bounce-back road win against Dana Hills. Strong defensive effort '
-            'forced 3 turnovers. Offense found rhythm in the second half.',
+            'Complete offensive explosion against Highland. 404 total yards on '
+            '53 snaps with 8 TDs. Ground game averaged 5.5 YPC.',
         keyTakeaways: [
-          'Defense forced 3 turnovers including a pick-six',
-          'Second-half adjustments opened up the play-action game',
-          'Rushing attack controlled clock in the 4th quarter',
+          'Run game averaged 5.5 yards per carry on 29 attempts',
+          '8 offensive touchdowns scored',
+          '1 turnover needs to be cleaned up',
         ],
-        teamGrades: {
-          'offense': 80.0,
-          'defense': 90.0,
-          'specialTeams': 82.5,
-        },
+        teamGrades: {'offense': 95.0, 'defense': 75.0, 'specialTeams': 75.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_004',
+      gameId: 'game_2023_04',
+      opponent: 'Long Beach Poly',
+      gameDate: DateTime(2023, 9, 8),
+      season: '2023',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369458',
+      hudlVideoId: '9369458',
+      totalPlays: 203,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2023, 9, 9, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            'High-volume game against Long Beach Poly with 203 total plays. '
+            '387 yards on 78 offensive snaps. Run game was dominant at 7.2 YPC.',
+        keyTakeaways: [
+          'Run game averaged 7.2 yards per carry on 40 attempts',
+          '3 offensive touchdowns scored',
+          '2 turnovers hurt — need to protect the ball',
+        ],
+        teamGrades: {'offense': 80.0, 'defense': 77.0, 'specialTeams': 75.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_005',
+      gameId: 'game_2023_05',
+      opponent: 'Kamehameha',
+      gameDate: DateTime(2023, 9, 15),
+      season: '2023',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369462',
+      hudlVideoId: '9369462',
+      totalPlays: 148,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2023, 9, 16, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            'Strong road performance in Hawaii against Kamehameha. 318 total '
+            'yards on 67 snaps with a balanced 5.7 YPC rushing attack.',
+        keyTakeaways: [
+          'Run game averaged 5.7 yards per carry on 37 attempts',
+          '4 offensive touchdowns scored',
+          'Controlled the clock and tempo throughout',
+        ],
+        teamGrades: {'offense': 88.0, 'defense': 75.0, 'specialTeams': 75.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_006',
+      gameId: 'game_2023_06',
+      opponent: 'Granite Hills',
+      gameDate: DateTime(2023, 9, 22),
+      season: '2023',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369470',
+      hudlVideoId: '9369470',
+      totalPlays: 166,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2023, 9, 23, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            'Solid win over Granite Hills. 366 total yards on 64 offensive '
+            'snaps with 6 TDs. Two turnovers kept it closer than it should have been.',
+        keyTakeaways: [
+          '6 offensive touchdowns scored',
+          '2 turnovers need to be addressed in practice',
+          'Pass game opened up in the second half',
+        ],
+        teamGrades: {'offense': 86.0, 'defense': 77.0, 'specialTeams': 75.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_007',
+      gameId: 'game_2023_07',
+      opponent: 'Los Alamitos',
+      gameDate: DateTime(2023, 9, 29),
+      season: '2023',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369460',
+      hudlVideoId: '9369460',
+      totalPlays: 225,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2023, 9, 30, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            'Heavyweight matchup against Los Alamitos. 225 total plays — highest '
+            'volume game of the season. 397 yards on 88 offensive snaps.',
+        keyTakeaways: [
+          '3 offensive touchdowns scored',
+          '1 turnover kept it competitive',
+          'Defense showed resilience with 98 plays on that side of the ball',
+        ],
+        teamGrades: {'offense': 84.0, 'defense': 80.0, 'specialTeams': 75.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_008',
+      gameId: 'game_2023_08',
+      opponent: 'De La Salle',
+      gameDate: DateTime(2023, 10, 6),
+      season: '2023',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369471',
+      hudlVideoId: '9369471',
+      totalPlays: 138,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2023, 10, 7, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            'Statement game against De La Salle. 353 total yards on 65 snaps. '
+            'Zero turnovers — cleanest game of the season offensively.',
+        keyTakeaways: [
+          '3 offensive touchdowns scored',
+          'Zero turnovers — excellent ball security',
+          'QB made elite reads against a tough defense',
+        ],
+        teamGrades: {'offense': 87.0, 'defense': 75.0, 'specialTeams': 75.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_009',
+      gameId: 'game_2023_09',
+      opponent: 'Palos Verdes',
+      gameDate: DateTime(2023, 10, 13),
+      season: '2023',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369466',
+      hudlVideoId: '9369466',
+      totalPlays: 159,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2023, 10, 14, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            'Offensive masterclass against Palos Verdes. 452 total yards — '
+            'season high — on 73 snaps. 8 TDs with explosive passing game.',
+        keyTakeaways: [
+          '8 offensive touchdowns scored — season high',
+          '452 total yards — most productive game of the season',
+          'Deep passing game was lethal all night',
+        ],
+        teamGrades: {'offense': 95.0, 'defense': 75.0, 'specialTeams': 75.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_010',
+      gameId: 'game_2023_10',
+      opponent: 'Tesoro',
+      gameDate: DateTime(2023, 10, 20),
+      season: '2023',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369464',
+      hudlVideoId: '9369464',
+      totalPlays: 153,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2023, 10, 21, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            'League opener dominance against Tesoro. 357 total yards on 59 '
+            'snaps. Efficient offense scored 4 TDs with zero turnovers.',
+        keyTakeaways: [
+          '4 offensive touchdowns scored',
+          'Clean game — no turnovers',
+          'Play-action was devastating off the run game',
+        ],
+        teamGrades: {'offense': 90.0, 'defense': 77.0, 'specialTeams': 75.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_011',
+      gameId: 'game_2023_11',
+      opponent: 'San Clemente',
+      gameDate: DateTime(2023, 10, 27),
+      season: '2023',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369463',
+      hudlVideoId: '9369463',
+      totalPlays: 170,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2023, 10, 28, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            'Gritty league battle against San Clemente. 215 total yards on 58 '
+            'snaps. Two turnovers stalled drives in a defensive slugfest.',
+        keyTakeaways: [
+          '2 offensive touchdowns scored',
+          '2 turnovers were costly — need better ball security',
+          'Defense stepped up to keep the team in it',
+        ],
+        teamGrades: {'offense': 67.0, 'defense': 76.0, 'specialTeams': 75.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_012',
+      gameId: 'game_2023_12',
+      opponent: 'Capo Valley',
+      gameDate: DateTime(2023, 11, 3),
+      season: '2023',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369465',
+      hudlVideoId: '9369465',
+      totalPlays: 147,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2023, 11, 4, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            'Explosive performance against Capo Valley. 375 total yards on 57 '
+            'snaps. Ground game was dominant at 8.0 YPC with 7 TDs.',
+        keyTakeaways: [
+          'Run game averaged 8.0 yards per carry on 25 attempts',
+          '7 offensive touchdowns scored',
+          'Most efficient ground game of the season',
+        ],
+        teamGrades: {'offense': 95.0, 'defense': 76.0, 'specialTeams': 75.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_013',
+      gameId: 'game_2023_13',
+      opponent: 'Oaks Christian',
+      gameDate: DateTime(2023, 11, 10),
+      season: '2023',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369467',
+      hudlVideoId: '9369467',
+      totalPlays: 151,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2023, 11, 11, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            'Playoff-caliber performance against Oaks Christian. 341 total '
+            'yards on 59 snaps. Balanced attack with 5.6 YPC and 61% passing.',
+        keyTakeaways: [
+          'Run game averaged 5.6 yards per carry on 27 attempts',
+          'Passing was 17/28 (61%) completions',
+          '5 offensive touchdowns scored',
+        ],
+        teamGrades: {'offense': 87.0, 'defense': 76.0, 'specialTeams': 75.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_014',
+      gameId: 'game_2023_14',
+      opponent: 'Servite',
+      gameDate: DateTime(2023, 11, 17),
+      season: '2023',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369469',
+      hudlVideoId: '9369469',
+      totalPlays: 160,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2023, 11, 18, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            'Season finale against Servite. 350 total yards on 67 snaps. '
+            'Offense found its rhythm with 4 TDs in a competitive matchup.',
+        keyTakeaways: [
+          '4 offensive touchdowns scored',
+          'Passing game was efficient in the second half',
+          'Strong finish to the 2023 campaign',
+        ],
+        teamGrades: {'offense': 90.0, 'defense': 77.0, 'specialTeams': 75.0},
+      ),
+    ),
+
+    // ── 2024 Season (11 games) ─────────────────────────────────────
+    HudlFilm(
+      id: 'film_015',
+      gameId: 'game_2024_01',
+      opponent: 'Kamehameha',
+      gameDate: DateTime(2024, 8, 17),
+      season: '2024',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369412',
+      hudlVideoId: '9369412',
+      totalPlays: 158,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2024, 8, 18, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            'Season opener in Hawaii against Kamehameha. 158 total plays with '
+            '56 offensive snaps in a physical matchup.',
+        keyTakeaways: [
+          '56 offensive plays — efficient snap count',
+          'Defense held strong with 60 plays on the field',
+        ],
+        teamGrades: {'offense': 78.0, 'defense': 80.0, 'specialTeams': 75.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_016',
+      gameId: 'game_2024_02',
+      opponent: 'Santa Margarita',
+      gameDate: DateTime(2024, 8, 24),
+      season: '2024',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369413',
+      hudlVideoId: '9369413',
+      totalPlays: 155,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2024, 8, 25, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            'Rivalry game against Santa Margarita. Defense dominated with 72 '
+            'plays — biggest defensive effort of the season.',
+        keyTakeaways: [
+          'Defense had 72 plays — elite effort',
+          '62-yard bomb on CINCY HOT JET was play of the game',
+        ],
+        teamGrades: {'offense': 76.0, 'defense': 88.0, 'specialTeams': 75.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_017',
+      gameId: 'game_2024_03',
+      opponent: 'Liberty',
+      gameDate: DateTime(2024, 9, 6),
+      season: '2024',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369414',
+      hudlVideoId: '9369414',
+      totalPlays: 112,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2024, 9, 7, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            'Quick, efficient win over Liberty. Just 112 total plays — lowest '
+            'of the season. Offense was efficient on 40 snaps.',
+        keyTakeaways: [
+          'Most efficient game of the year — 112 total plays',
+          'BEARS COKE on the ground was effective early',
+        ],
+        teamGrades: {'offense': 85.0, 'defense': 82.0, 'specialTeams': 75.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_018',
+      gameId: 'game_2024_04',
+      opponent: 'Highland',
+      gameDate: DateTime(2024, 9, 13),
+      season: '2024',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369415',
+      hudlVideoId: '9369415',
+      totalPlays: 133,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2024, 9, 14, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            'Controlled win over Highland. 44 offensive snaps with MAVS KEY 3 '
+            'setting the tone early with a 12-yard completion.',
+        keyTakeaways: [
+          '44 offensive snaps — efficient and decisive',
+          'Defense held strong with 54 snaps',
+        ],
+        teamGrades: {'offense': 82.0, 'defense': 80.0, 'specialTeams': 75.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_019',
+      gameId: 'game_2024_05',
+      opponent: 'Basha',
+      gameDate: DateTime(2024, 9, 20),
+      season: '2024',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369416',
+      hudlVideoId: '9369416',
+      totalPlays: 163,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2024, 9, 21, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            'High-volume game against Arizona powerhouse Basha. 82 offensive '
+            'snaps — most of the season. Physical, competitive matchup.',
+        keyTakeaways: [
+          '82 offensive snaps — highest volume game of the year',
+          'RED PEEL struggled early but offense adjusted',
+        ],
+        teamGrades: {'offense': 74.0, 'defense': 76.0, 'specialTeams': 75.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_020',
+      gameId: 'game_2024_06',
+      opponent: 'Chaparral',
+      gameDate: DateTime(2024, 9, 27),
+      season: '2024',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369417',
+      hudlVideoId: '9369417',
+      totalPlays: 153,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2024, 9, 28, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            'Defensive battle against Chaparral. Defense had 72 plays. '
+            'Offense managed 47 snaps in a lower-scoring affair.',
+        keyTakeaways: [
+          'Defense was dominant with 72 plays',
+          'STEELER PORTLAND HOT ROCKET concept showed versatility',
+        ],
+        teamGrades: {'offense': 70.0, 'defense': 85.0, 'specialTeams': 75.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_021',
+      gameId: 'game_2024_07',
+      opponent: 'Long Beach Poly',
+      gameDate: DateTime(2024, 10, 4),
+      season: '2024',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369418',
+      hudlVideoId: '9369418',
+      totalPlays: 147,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2024, 10, 5, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            'Rivalry matchup against Long Beach Poly. 67 offensive snaps with '
+            'STACK HALO KEY 1 setting up the run game effectively.',
+        keyTakeaways: [
+          '67 offensive plays with solid balance',
+          'HALO concepts continued to evolve from 2023',
+        ],
+        teamGrades: {'offense': 80.0, 'defense': 78.0, 'specialTeams': 75.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_022',
+      gameId: 'game_2024_08',
+      opponent: 'San Clemente',
+      gameDate: DateTime(2024, 10, 18),
+      season: '2024',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369419',
+      hudlVideoId: '9369419',
+      totalPlays: 127,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2024, 10, 19, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            'League game against San Clemente. 64 offensive snaps with '
+            'BEAMER RAMBO HOT giving the defense fits in the run game.',
+        keyTakeaways: [
+          '64 offensive plays — efficient league win',
+          'Run game was the story behind new BEAMER concepts',
+        ],
+        teamGrades: {'offense': 84.0, 'defense': 80.0, 'specialTeams': 75.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_023',
+      gameId: 'game_2024_09',
+      opponent: 'Edison',
+      gameDate: DateTime(2024, 10, 25),
+      season: '2024',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369420',
+      hudlVideoId: '9369420',
+      totalPlays: 138,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2024, 10, 26, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            'League matchup against Edison. MAVS GEORGE SHARK rushed for 9 '
+            'on the opening drive. 52 offensive snaps in a solid showing.',
+        keyTakeaways: [
+          'New MAVS GEORGE SHARK concept debuted',
+          'Defense had 57 plays — controlled the tempo',
+        ],
+        teamGrades: {'offense': 79.0, 'defense': 81.0, 'specialTeams': 75.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_024',
+      gameId: 'game_2024_10',
+      opponent: 'Los Alamitos',
+      gameDate: DateTime(2024, 11, 1),
+      season: '2024',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369421',
+      hudlVideoId: '9369421',
+      totalPlays: 152,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2024, 11, 2, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            'Playoff-feel game against Los Alamitos. 61 offensive snaps with '
+            'HALO KEY 1 concepts evolving from previous season.',
+        keyTakeaways: [
+          '61 offensive plays — balanced attack',
+          'HALO KEY 1 completions set the tone early',
+        ],
+        teamGrades: {'offense': 82.0, 'defense': 79.0, 'specialTeams': 75.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_025',
+      gameId: 'game_2024_11',
+      opponent: 'Centennial',
+      gameDate: DateTime(2024, 11, 15),
+      season: '2024',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369422',
+      hudlVideoId: '9369422',
+      totalPlays: 162,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2024, 11, 16, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            '2024 season finale against Centennial. 64 offensive snaps with '
+            'HORNET rushing concepts anchoring the ground game.',
+        keyTakeaways: [
+          'Defense had 68 plays — gutsy performance in season finale',
+          'HORNET concept continues to be a staple in the run game',
+        ],
+        teamGrades: {'offense': 78.0, 'defense': 82.0, 'specialTeams': 75.0},
+      ),
+    ),
+
+    // ── 2025 Season (10 games) ─────────────────────────────────────
+    HudlFilm(
+      id: 'film_026',
+      gameId: 'game_2025_01',
+      opponent: 'Santa Margarita',
+      gameDate: DateTime(2025, 8, 22),
+      season: '2025',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369399',
+      hudlVideoId: '9369399',
+      totalPlays: 128,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2025, 8, 23, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            '2025 season opener against Santa Margarita. Defense dominated '
+            'with 68 plays. New FROG SKIP SHELL concept debuted.',
+        keyTakeaways: [
+          'Defense was dominant with 68 plays out of 128 total',
+          'New 2025 concepts showing already — FROG SKIP SHELL',
+        ],
+        teamGrades: {'offense': 75.0, 'defense': 86.0, 'specialTeams': 75.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_027',
+      gameId: 'game_2025_02',
+      opponent: 'St Paul',
+      gameDate: DateTime(2025, 8, 29),
+      season: '2025',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369400',
+      hudlVideoId: '9369400',
+      totalPlays: 144,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2025, 8, 30, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            'Home win over St Paul. 60 offensive snaps. GREEN COKE concept '
+            'connected for 20 yards to set the tone early.',
+        keyTakeaways: [
+          '60 offensive plays with GREEN COKE showing early promise',
+          'Balanced 50/50 offense with 30 special teams plays',
+        ],
+        teamGrades: {'offense': 82.0, 'defense': 78.0, 'specialTeams': 75.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_028',
+      gameId: 'game_2025_03',
+      opponent: 'Folsom',
+      gameDate: DateTime(2025, 9, 5),
+      season: '2025',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369401',
+      hudlVideoId: '9369401',
+      totalPlays: 161,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2025, 9, 6, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            'Marquee matchup against NorCal powerhouse Folsom. Defense faced '
+            '77 plays — most of any game in 2025. ANGELS REBEL ripped off 26.',
+        keyTakeaways: [
+          'Defense faced 77 plays — heaviest workload of the year',
+          'ANGELS REBEL for 26 yards was the biggest offensive play',
+        ],
+        teamGrades: {'offense': 74.0, 'defense': 78.0, 'specialTeams': 75.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_029',
+      gameId: 'game_2025_04',
+      opponent: 'Lincoln',
+      gameDate: DateTime(2025, 9, 12),
+      season: '2025',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369402',
+      hudlVideoId: '9369402',
+      totalPlays: 174,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2025, 9, 13, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            'High-volume game against Lincoln with 174 total plays. 68 '
+            'offensive snaps. RED LOOP REBEL for a 27-yard TD capped Q4.',
+        keyTakeaways: [
+          '174 total plays — highest volume game of 2025',
+          'RED LOOP REBEL 27-yard TD in Q4 was the dagger',
+          '68 offensive snaps — balanced workload',
+        ],
+        teamGrades: {'offense': 83.0, 'defense': 80.0, 'specialTeams': 75.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_030',
+      gameId: 'game_2025_05',
+      opponent: 'Mission Viejo',
+      gameDate: DateTime(2025, 9, 19),
+      season: '2025',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369403',
+      hudlVideoId: '9369403',
+      totalPlays: 138,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2025, 9, 20, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            'Crosstown rivalry game. 53 offensive snaps with DRAGON X GLANCE '
+            'connecting for 15 yards to open the game.',
+        keyTakeaways: [
+          'DRAGON X GLANCE showed new wrinkle in passing game',
+          'Defense had 66 plays — locked down the rival offense',
+        ],
+        teamGrades: {'offense': 79.0, 'defense': 83.0, 'specialTeams': 75.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_031',
+      gameId: 'game_2025_06',
+      opponent: 'Long Beach Poly',
+      gameDate: DateTime(2025, 10, 3),
+      season: '2025',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369404',
+      hudlVideoId: '9369404',
+      totalPlays: 130,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2025, 10, 4, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            'Third consecutive year facing Long Beach Poly. 56 offensive '
+            'snaps with ASTROS COKE opening the ground game.',
+        keyTakeaways: [
+          '3rd straight year vs Poly — program has a scouting edge now',
+          'ASTROS COKE continues to evolve the run game',
+        ],
+        teamGrades: {'offense': 80.0, 'defense': 79.0, 'specialTeams': 75.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_032',
+      gameId: 'game_2025_07',
+      opponent: 'San Clemente',
+      gameDate: DateTime(2025, 10, 17),
+      season: '2025',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369405',
+      hudlVideoId: '9369405',
+      totalPlays: 148,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2025, 10, 18, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            'League matchup against San Clemente. 63 offensive snaps. GRAY '
+            'EXXON connected for 8 yards to open the game.',
+        keyTakeaways: [
+          '63 offensive plays — most balanced effort in league play',
+          'New GRAY EXXON concept showing well against league opponents',
+        ],
+        teamGrades: {'offense': 81.0, 'defense': 79.0, 'specialTeams': 75.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_033',
+      gameId: 'game_2025_08',
+      opponent: 'Edison',
+      gameDate: DateTime(2025, 10, 24),
+      season: '2025',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369406',
+      hudlVideoId: '9369406',
+      totalPlays: 148,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2025, 10, 25, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            'League game against Edison. 61 offensive snaps. HONDA concept '
+            'continued to produce in the quick passing game.',
+        keyTakeaways: [
+          'HONDA concept efficient in the short passing game',
+          'Defense had 56 snaps — well-managed game',
+        ],
+        teamGrades: {'offense': 80.0, 'defense': 80.0, 'specialTeams': 75.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_034',
+      gameId: 'game_2025_09',
+      opponent: 'Los Alamitos',
+      gameDate: DateTime(2025, 10, 31),
+      season: '2025',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369407',
+      hudlVideoId: '9369407',
+      totalPlays: 202,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2025, 11, 1, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            'Epic battle against Los Alamitos — 202 total plays. Defense had '
+            '101 plays (most of any game across all 3 seasons). METS KEY 1 '
+            'opened with a 9-yard completion.',
+        keyTakeaways: [
+          '202 total plays — marathon game',
+          'Defense faced 101 plays — program record workload',
+          'Special teams had 45 plays — highly contested field position',
+        ],
+        teamGrades: {'offense': 76.0, 'defense': 82.0, 'specialTeams': 78.0},
+      ),
+    ),
+    HudlFilm(
+      id: 'film_035',
+      gameId: 'game_2025_10',
+      opponent: 'Mater Dei',
+      gameDate: DateTime(2025, 11, 14),
+      season: '2025',
+      level: 'varsity',
+      hudlVideoUrl: 'https://www.hudl.com/video/3/9369408',
+      hudlVideoId: '9369408',
+      totalPlays: 137,
+      importedBy: 'coach_001',
+      importedAt: DateTime(2025, 11, 15, 10, 0),
+      status: FilmStatus.ready,
+      summary: const FilmSummary(
+        overview:
+            '2025 season finale against Mater Dei. 56 offensive snaps with '
+            'BEARS rushing for 5 on the opening drive. Gritty, competitive game.',
+        keyTakeaways: [
+          'Facing Mater Dei — ultimate test for the program',
+          'BEARS concept still a core part of the run game after 3 seasons',
+          'Defense had 59 plays in a tightly contested matchup',
+        ],
+        teamGrades: {'offense': 77.0, 'defense': 80.0, 'specialTeams': 75.0},
       ),
     ),
   ];
 
-  // ── Hudl Plays ────────────────────────────────────────────────────
+  // ── Hudl Plays (real plays from 2023-2025 season breakdown data) ──
 
   static final List<HudlPlay> hudlPlays = [
-    // Film 1 – El Toro Chargers
+    // El Camino — big passing play
     const HudlPlay(
-      id: 'play_001',
-      filmId: 'film_001',
-      playNumber: 12,
-      quarter: 1,
-      downAndDistance: '1st & 10',
-      yardLine: 35,
-      formation: 'Shotgun Trips Right',
-      playType: 'pass',
-      playCall: 'Mesh Concept',
-      result: 'Complete - 22 yards',
-      yardsGained: 22,
-      isTouchdown: false,
-      taggedPlayerIds: ['demo_player', 'demo_player_02'],
-      coachNote: 'Great read by QB, hit the crosser in stride.',
+      id: 'play_001', filmId: 'film_001', playNumber: 12, quarter: 1,
+      downAndDistance: '2nd & 4', yardLine: 38, formation: 'TRAIN LT',
+      playType: 'pass', playCall: 'MARCH',
+      result: 'Complete - 44 yards', yardsGained: 44,
     ),
     const HudlPlay(
-      id: 'play_002',
-      filmId: 'film_001',
-      playNumber: 34,
-      quarter: 3,
-      downAndDistance: '2nd & 5',
-      yardLine: 12,
-      formation: 'I-Formation Strong',
-      playType: 'run',
-      playCall: 'Power Right',
-      result: 'Rush - 12 yards, TD',
-      yardsGained: 12,
-      isTouchdown: true,
-      taggedPlayerIds: ['demo_player_03', 'demo_player_04'],
-      coachNote: 'Pulling guard sealed the edge perfectly.',
+      id: 'play_002', filmId: 'film_001', playNumber: 94, quarter: 3,
+      downAndDistance: '1st & 10', yardLine: 20, formation: 'HURRICANE RT',
+      playType: 'run', playCall: 'BEARS SPECIAL',
+      result: 'Rush - 27 yards', yardsGained: 27,
     ),
-    // Film 2 – Tesoro Titans
+    // Citrus Valley — explosive pass plays
     const HudlPlay(
-      id: 'play_003',
-      filmId: 'film_002',
-      playNumber: 8,
-      quarter: 1,
-      downAndDistance: '3rd & 7',
-      yardLine: 42,
-      formation: 'Shotgun Empty',
-      playType: 'pass',
-      playCall: 'Four Verticals',
-      result: 'Complete - 38 yards, TD',
-      yardsGained: 38,
-      isTouchdown: true,
-      taggedPlayerIds: ['demo_player', 'demo_player_02'],
-      coachNote: 'Perfect deep ball. Safety bit on the play-action fake.',
+      id: 'play_003', filmId: 'film_002', playNumber: 29, quarter: 1,
+      downAndDistance: '1st & 10', yardLine: 46, formation: 'HURRICANE RT',
+      playType: 'pass', playCall: 'MAGNUM COLD Z HEAT',
+      result: 'Complete - 42 yards', yardsGained: 42,
     ),
     const HudlPlay(
-      id: 'play_004',
-      filmId: 'film_002',
-      playNumber: 45,
-      quarter: 3,
-      downAndDistance: '2nd & 3',
-      yardLine: 28,
-      formation: 'Shotgun Doubles',
-      playType: 'pass',
-      playCall: 'Slant-Flat Combo',
-      result: 'Intercepted',
-      yardsGained: 0,
-      isTurnover: true,
-      taggedPlayerIds: ['demo_player'],
-      coachNote: 'QB didn\'t see the LB dropping into the passing lane. Blitz read issue.',
+      id: 'play_004', filmId: 'film_002', playNumber: 91, quarter: 3,
+      downAndDistance: '2nd & 1', yardLine: 39, formation: 'SPLIT RT',
+      playType: 'pass', playCall: 'VEGAS HOT',
+      result: 'Complete - 39 yards, TD', yardsGained: 39, isTouchdown: true,
     ),
-    // Film 3 – Dana Hills Dolphins
+    // Highland — 61-yard TD and 44-yard completion
     const HudlPlay(
-      id: 'play_005',
-      filmId: 'film_003',
-      playNumber: 18,
-      quarter: 2,
-      downAndDistance: '1st & 10',
-      yardLine: 50,
-      formation: 'Pistol Wing Right',
-      playType: 'run',
-      playCall: 'Inside Zone Left',
-      result: 'Rush - 15 yards',
-      yardsGained: 15,
-      taggedPlayerIds: ['demo_player_03', 'demo_player_05'],
-      coachNote: 'RB hit the cutback lane hard. Great downfield block by WR.',
+      id: 'play_005', filmId: 'film_003', playNumber: 4, quarter: 1,
+      downAndDistance: '1st & 10', yardLine: 39, formation: 'TRAIN LT',
+      playType: 'pass', playCall: 'REGAL EURO HOT HOUSTON',
+      result: 'Complete - 61 yards, TD', yardsGained: 61, isTouchdown: true,
     ),
     const HudlPlay(
-      id: 'play_006',
-      filmId: 'film_003',
-      playNumber: 52,
-      quarter: 4,
-      downAndDistance: '3rd & 8',
-      yardLine: 25,
-      formation: 'Shotgun Trips Left',
-      playType: 'pass',
-      playCall: 'Smash Concept',
-      result: 'Complete - 25 yards, TD',
-      yardsGained: 25,
-      isTouchdown: true,
-      taggedPlayerIds: ['demo_player', 'demo_player_02'],
-      coachNote: 'Corner route was wide open. QB put it on the money.',
+      id: 'play_006', filmId: 'film_003', playNumber: 20, quarter: 1,
+      downAndDistance: '1st & 10', yardLine: 48, formation: 'TRAIN LT',
+      playType: 'pass', playCall: 'PORTLAND COLD MOUSE',
+      result: 'Complete - 44 yards', yardsGained: 44,
+    ),
+    // Long Beach Poly — dominant ground game
+    const HudlPlay(
+      id: 'play_007', filmId: 'film_004', playNumber: 143, quarter: 4,
+      downAndDistance: '2nd & 9', yardLine: 44, formation: 'SIDE LT',
+      playType: 'run', playCall: 'YELLOW TESLA',
+      result: 'Rush - 25 yards', yardsGained: 25,
+    ),
+    const HudlPlay(
+      id: 'play_008', filmId: 'film_004', playNumber: 85, quarter: 2,
+      downAndDistance: '1st & 10', yardLine: 10, formation: 'TRAIN LT',
+      playType: 'run', playCall: 'ASTROS',
+      result: 'Rush - 23 yards', yardsGained: 23,
+    ),
+    // Kamehameha — 43-yard TD pass and 31-yard run
+    const HudlPlay(
+      id: 'play_009', filmId: 'film_005', playNumber: 97, quarter: 3,
+      downAndDistance: '2nd & 5', yardLine: 43, formation: 'SLING RT',
+      playType: 'pass', playCall: 'REGAL LOOP HOT CHILL',
+      result: 'Complete - 43 yards, TD', yardsGained: 43, isTouchdown: true,
+    ),
+    const HudlPlay(
+      id: 'play_010', filmId: 'film_005', playNumber: 7, quarter: 1,
+      downAndDistance: '1st & 10', yardLine: 4, formation: 'TRIBE LT',
+      playType: 'run', playCall: 'HALO KEY 2',
+      result: 'Rush - 31 yards', yardsGained: 31,
+    ),
+    // Granite Hills — passing touchdowns
+    const HudlPlay(
+      id: 'play_011', filmId: 'film_006', playNumber: 56, quarter: 2,
+      downAndDistance: '1st & 10', yardLine: 33, formation: 'TRIGGER RT',
+      playType: 'pass', playCall: 'BLUE STOW',
+      result: 'Complete - 33 yards, TD', yardsGained: 33, isTouchdown: true,
+    ),
+    const HudlPlay(
+      id: 'play_012', filmId: 'film_006', playNumber: 118, quarter: 3,
+      downAndDistance: '1st & 10', yardLine: 34, formation: 'TRIPLE RT',
+      playType: 'pass', playCall: 'MAGNUM COLD STITCH STUTTER',
+      result: 'Complete - 30 yards', yardsGained: 30,
+    ),
+    // Los Alamitos — clutch 49-yard TD
+    const HudlPlay(
+      id: 'play_013', filmId: 'film_007', playNumber: 142, quarter: 3,
+      downAndDistance: '2nd & 6', yardLine: 49, formation: 'SPIKE LT',
+      playType: 'pass', playCall: 'ASTROS REBEL',
+      result: 'Complete - 49 yards, TD', yardsGained: 49, isTouchdown: true,
+    ),
+    const HudlPlay(
+      id: 'play_014', filmId: 'film_007', playNumber: 110, quarter: 3,
+      downAndDistance: '2nd & 13', yardLine: 47, formation: 'STONE RT',
+      playType: 'pass', playCall: 'TESLA',
+      result: 'Complete - 38 yards', yardsGained: 38,
+    ),
+    // De La Salle — QB scramble and clutch 4th down
+    const HudlPlay(
+      id: 'play_015', filmId: 'film_008', playNumber: 61, quarter: 2,
+      downAndDistance: '2nd & 10', yardLine: 48, formation: 'TRIGGER RT',
+      playType: 'pass', playCall: 'CINCY HOT DAKOTA',
+      result: 'Scramble - 43 yards', yardsGained: 43,
+    ),
+    const HudlPlay(
+      id: 'play_016', filmId: 'film_008', playNumber: 75, quarter: 3,
+      downAndDistance: '4th & 6', yardLine: 41, formation: 'TRIGGER LT',
+      playType: 'pass', playCall: 'FORD COLD COLORADO',
+      result: 'Complete - 35 yards', yardsGained: 35,
+    ),
+    // Palos Verdes — 74-yard TD and 40-yard TD
+    const HudlPlay(
+      id: 'play_017', filmId: 'film_009', playNumber: 110, quarter: 3,
+      downAndDistance: '2nd & 9', yardLine: 26, formation: 'SPLIT RT',
+      playType: 'pass', playCall: 'CHEETAH HOOSIER COLD DODGE',
+      result: 'Complete - 74 yards, TD', yardsGained: 74, isTouchdown: true,
+    ),
+    const HudlPlay(
+      id: 'play_018', filmId: 'film_009', playNumber: 33, quarter: 1,
+      downAndDistance: '2nd & 10', yardLine: 40, formation: 'STACK RT',
+      playType: 'pass', playCall: 'SEATTLE COLD PORTLAND',
+      result: 'Complete - 40 yards, TD', yardsGained: 40, isTouchdown: true,
+    ),
+    // Tesoro — 80-yard TD bomb and 60-yard TD
+    const HudlPlay(
+      id: 'play_019', filmId: 'film_010', playNumber: 50, quarter: 2,
+      downAndDistance: '1st & 10', yardLine: 20, formation: 'SPLIT LT',
+      playType: 'pass', playCall: 'SEATTLE HOT DOLLAR',
+      result: 'Complete - 80 yards, TD', yardsGained: 80, isTouchdown: true,
+    ),
+    const HudlPlay(
+      id: 'play_020', filmId: 'film_010', playNumber: 147, quarter: 4,
+      downAndDistance: '3rd & 10', yardLine: 40, formation: 'STONE LT',
+      playType: 'pass', playCall: 'ALPHA COLD',
+      result: 'Complete - 60 yards, TD', yardsGained: 60, isTouchdown: true,
+    ),
+    // San Clemente — tough defensive game, big plays saved the day
+    const HudlPlay(
+      id: 'play_021', filmId: 'film_011', playNumber: 20, quarter: 1,
+      downAndDistance: '2nd & 14', yardLine: 22, formation: 'TWINS GATOR RT',
+      playType: 'pass', playCall: 'BROADWAY HOT HAWAII',
+      result: 'Complete - 36 yards', yardsGained: 36,
+    ),
+    const HudlPlay(
+      id: 'play_022', filmId: 'film_011', playNumber: 94, quarter: 3,
+      downAndDistance: '2nd & 4', yardLine: 26, formation: 'FIRE RT',
+      playType: 'pass', playCall: 'GRID COLD',
+      result: 'Complete - 32 yards', yardsGained: 32,
+    ),
+    // Capo Valley — 70-yard TD run and 50-yard TD pass
+    const HudlPlay(
+      id: 'play_023', filmId: 'film_012', playNumber: 10, quarter: 1,
+      downAndDistance: '2nd & 10', yardLine: 30, formation: 'TRIPLE RT',
+      playType: 'run', playCall: 'HORNET KEY 3',
+      result: 'Rush - 70 yards, TD', yardsGained: 70, isTouchdown: true,
+    ),
+    const HudlPlay(
+      id: 'play_024', filmId: 'film_012', playNumber: 103, quarter: 3,
+      downAndDistance: '1st & 10', yardLine: 50, formation: 'SPREAD RT',
+      playType: 'pass', playCall: 'BROADWAY COLD GRID',
+      result: 'Complete - 50 yards, TD', yardsGained: 50, isTouchdown: true,
+    ),
+    // Oaks Christian — 58-yard run and deep pass
+    const HudlPlay(
+      id: 'play_025', filmId: 'film_013', playNumber: 123, quarter: 4,
+      downAndDistance: '1st & 10', yardLine: 34, formation: 'TRAIN RT',
+      playType: 'run', playCall: 'PACKER',
+      result: 'Rush - 58 yards', yardsGained: 58,
+    ),
+    const HudlPlay(
+      id: 'play_026', filmId: 'film_013', playNumber: 14, quarter: 1,
+      downAndDistance: '2nd & 9', yardLine: 37, formation: 'STONE LT',
+      playType: 'pass', playCall: 'YELLOW COKE',
+      result: 'Complete - 39 yards', yardsGained: 39,
+    ),
+    // Servite — 90-yard TD bomb and 34-yard completion
+    const HudlPlay(
+      id: 'play_027', filmId: 'film_014', playNumber: 133, quarter: 4,
+      downAndDistance: '3rd & 5', yardLine: 10, formation: 'TRIBE RT',
+      playType: 'pass', playCall: 'MAGNUM COLD ALASKA X NEEDLE',
+      result: 'Complete - 90 yards, TD', yardsGained: 90, isTouchdown: true,
+    ),
+    const HudlPlay(
+      id: 'play_028', filmId: 'film_014', playNumber: 47, quarter: 2,
+      downAndDistance: '2nd & 4', yardLine: 38, formation: 'SPLIT LT',
+      playType: 'pass', playCall: 'CHTH TESLA HOT PORTLAND DUB',
+      result: 'Complete - 34 yards', yardsGained: 34,
     ),
   ];
 
-  // ── Hudl Player Stats ─────────────────────────────────────────────
+  // ── Hudl Player Stats (sample AI-generated analysis) ──────────────
 
   static final List<HudlPlayerStats> hudlPlayerStats = [
-    // Marcus Coleman – QB – vs El Toro
+    // QB stats — vs El Camino (season opener)
     const HudlPlayerStats(
       id: 'pstat_001',
       filmId: 'film_001',
       playerId: 'demo_player',
-      playerName: 'Marcus Coleman',
+      playerName: 'QB #1',
       position: 'QB',
       stats: {
         'completions': 18,
         'attempts': 25,
-        'passingYards': 245,
+        'passingYards': 265,
         'passingTDs': 3,
         'interceptions': 0,
         'completionPct': 72.0,
-        'yardsPerAttempt': 9.8,
+        'yardsPerAttempt': 10.6,
         'rushAttempts': 4,
         'rushYards': 28,
-        'qbRating': 142.5,
+        'qbRating': 148.5,
         'sacksTaken': 1,
       },
-      overallGrade: 88.5,
+      overallGrade: 92.0,
       gradeLabel: 'Elite',
       strengths: [
-        'Pocket awareness — consistently stepped up to avoid pressure',
         'Deep ball accuracy — 4/5 on throws over 20 yards',
-        'Pre-snap reads — checked out of 3 bad plays at the line',
+        'Pre-snap reads led to 3 successful audibles at the line',
+        'Pocket awareness — stepped up to avoid pressure consistently',
       ],
       areasToImprove: [
-        'Tendency to lock onto first read on quick game',
-        'Could improve ball placement on out-breaking routes',
+        'Tendency to lock onto first read on quick game concepts',
+        'Ball placement on out-breaking routes could be tighter',
       ],
-      highlightPlays: [12, 23, 34, 48],
+      highlightPlays: [12, 23, 48, 67],
       aiAnalysis:
-          'Marcus was in full command of the offense against El Toro. His '
-          'pocket presence was outstanding, sliding away from pressure on '
-          'multiple occasions to extend plays. The deep ball was his biggest '
-          'weapon, connecting on 4 of 5 attempts over 20 yards. He also made '
-          'three audible changes at the line that resulted in positive plays. '
-          'Minor areas to work on include going through his full progression '
-          'on quick-game concepts and tightening ball placement on out routes.',
+          'Dominant opening performance. The passing attack was lethal with '
+          '10.6 yards per attempt and zero turnovers. Deep ball was the '
+          'biggest weapon connecting on 4 of 5 attempts over 20 yards. '
+          'Three successful audibles at the line showed excellent pre-snap '
+          'recognition of the El Camino defensive looks.',
     ),
-    // Marcus Coleman – QB – vs Tesoro
+    // QB stats — vs Palos Verdes (season-high offense)
     const HudlPlayerStats(
       id: 'pstat_002',
-      filmId: 'film_002',
+      filmId: 'film_009',
       playerId: 'demo_player',
-      playerName: 'Marcus Coleman',
+      playerName: 'QB #1',
       position: 'QB',
       stats: {
-        'completions': 15,
-        'attempts': 28,
-        'passingYards': 180,
+        'completions': 22,
+        'attempts': 30,
+        'passingYards': 340,
+        'passingTDs': 5,
+        'interceptions': 0,
+        'completionPct': 73.3,
+        'yardsPerAttempt': 11.3,
+        'rushAttempts': 3,
+        'rushYards': 22,
+        'qbRating': 168.0,
+        'sacksTaken': 0,
+      },
+      overallGrade: 96.0,
+      gradeLabel: 'Elite',
+      strengths: [
+        'Season-best 73% completion rate with 5 TDs and zero picks',
+        'Averaged 11.3 yards per attempt — devastating deep game',
+        'CHEETAH HOOSIER COLD DODGE was the play of the season (74-yd TD)',
+      ],
+      areasToImprove: [
+        'Could have checked down more vs Cover 0 looks in first quarter',
+      ],
+      highlightPlays: [33, 65, 88, 110, 131],
+      aiAnalysis:
+          'This was the best offensive performance of the 2023 season. 452 '
+          'total yards and 8 TDs against Palos Verdes. The deep passing game '
+          'was unstoppable with multiple explosive plays including a 74-yard '
+          'TD on CHEETAH HOOSIER COLD DODGE. Play-action off the run game '
+          'created wide-open windows downfield all night.',
+    ),
+    // QB stats — vs San Clemente (toughest game)
+    const HudlPlayerStats(
+      id: 'pstat_003',
+      filmId: 'film_011',
+      playerId: 'demo_player',
+      playerName: 'QB #1',
+      position: 'QB',
+      stats: {
+        'completions': 12,
+        'attempts': 24,
+        'passingYards': 145,
         'passingTDs': 1,
         'interceptions': 2,
-        'completionPct': 53.6,
-        'yardsPerAttempt': 6.4,
-        'rushAttempts': 6,
-        'rushYards': 18,
-        'qbRating': 58.3,
+        'completionPct': 50.0,
+        'yardsPerAttempt': 6.0,
+        'rushAttempts': 5,
+        'rushYards': 15,
+        'qbRating': 52.0,
         'sacksTaken': 3,
       },
-      overallGrade: 62.0,
+      overallGrade: 58.0,
       gradeLabel: 'Below Average',
       strengths: [
         'Showed toughness taking hits and staying in the pocket',
-        'First-quarter TD drive was well-orchestrated (8 plays, 75 yards)',
+        'BROADWAY HOT HAWAII for 36 yards was a great read under pressure',
       ],
       areasToImprove: [
-        'Reading the blitz — failed to identify overload blitz on 3 sacks',
-        'Ball security — both INTs came from forcing throws into coverage',
-        'Need quicker release on 3-step drops to beat pressure',
-        'Check-down awareness — missed open RB in the flat multiple times',
+        'Both INTs came from forcing throws into tight coverage',
+        'Need quicker release on 3-step drops to beat the blitz',
+        'Check-down awareness — missed open backs in the flat multiple times',
+        'Pre-snap blitz recognition needs work against overload looks',
       ],
-      highlightPlays: [8],
+      highlightPlays: [20],
       aiAnalysis:
-          'A tough night for Marcus against a blitz-heavy Tesoro defense. He '
-          'struggled to identify pre-snap pressure looks, resulting in 3 sacks '
-          'and multiple rushed throws. Both interceptions came when he forced '
-          'the ball into tight windows under duress instead of taking the '
-          'check-down. The first-quarter TD drive showed what he\'s capable of '
-          'when given time, but the second half was a different story as Tesoro '
-          'dialed up the pressure. Key focus areas this week: blitz recognition '
-          'drills, quick-release mechanics, and check-down progression reads.',
+          'The toughest game of the season. San Clemente brought heavy '
+          'pressure all night and the offense struggled with only 215 total '
+          'yards. Two turnovers stalled key drives. The BROADWAY HOT HAWAII '
+          'completion for 36 yards showed the arm talent is there but '
+          'decision-making under pressure was inconsistent. Focus this week: '
+          'blitz recognition drills and check-down progression reads.',
     ),
   ];
 }
