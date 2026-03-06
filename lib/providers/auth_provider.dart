@@ -53,7 +53,7 @@ final currentUidProvider = Provider<String>((ref) {
 
 /// Whether the app is running in demo mode (no Firebase auth).
 /// Set to true when user logs in with "demo" username.
-final isDemoModeProvider = StateProvider<bool>((ref) => false);
+final isDemoModeProvider = StateProvider<bool>((ref) => true);
 
 /// Fetches the [Player] profile linked to the current [AppUser].
 /// Reads `linkedPlayerId` from the resolved user, then fetches

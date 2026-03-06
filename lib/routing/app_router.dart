@@ -79,7 +79,7 @@ final routerProvider = Provider<GoRouter>((ref) {
 
   return GoRouter(
     navigatorKey: _rootNavigatorKey,
-    initialLocation: '/login',
+    initialLocation: '/home',
     refreshListenable: _GoRouterRefreshStream(authStream),
     redirect: (context, state) {
       final isDemoMode = ref.read(isDemoModeProvider);
