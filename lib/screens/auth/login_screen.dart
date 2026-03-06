@@ -197,14 +197,9 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 // Logo
-                Image.network(
-                  'https://missionfootball.com/wp-content/uploads/2024/09/MV_FB_LOGO_WLACES.png',
+                Image.asset(
+                  'assets/images/mv_logo.png',
                   height: 120,
-                  errorBuilder: (context, error, stackTrace) => const Icon(
-                    Icons.sports_football,
-                    size: 80,
-                    color: DiabloColors.gold,
-                  ),
                 ),
                 const SizedBox(height: 16),
                 const Text(

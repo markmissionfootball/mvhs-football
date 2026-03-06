@@ -26,18 +26,9 @@ class DiabloAppBar extends StatelessWidget implements PreferredSizeWidget {
       centerTitle: true,
       automaticallyImplyLeading: showBack,
       title: showLogo
-          ? Image.network(
-              'https://missionfootball.com/wp-content/uploads/2024/09/MV_FB_LOGO_WLACES.png',
+          ? Image.asset(
+              'assets/images/mv_logo.png',
               height: 44,
-              errorBuilder: (context, error, stackTrace) => Text(
-                title ?? 'MVHS FOOTBALL',
-                style: const TextStyle(
-                  color: DiabloColors.white,
-                  fontSize: 16,
-                  fontWeight: FontWeight.w700,
-                  letterSpacing: 2.0,
-                ),
-              ),
             )
           : Text(
               title?.toUpperCase() ?? '',
