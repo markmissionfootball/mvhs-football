@@ -9,41 +9,6 @@
       ]
     },
     {
-      "collectionGroup": "calendarEvents",
-      "queryScope": "COLLECTION",
-      "fields": [
-        { "fieldPath": "startTime", "order": "ASCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "announcements",
-      "queryScope": "COLLECTION",
-      "fields": [
-        { "fieldPath": "createdAt", "order": "DESCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "maxEntries",
-      "queryScope": "COLLECTION_GROUP",
-      "fields": [
-        { "fieldPath": "testDate", "order": "DESCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "combineResults",
-      "queryScope": "COLLECTION_GROUP",
-      "fields": [
-        { "fieldPath": "testDate", "order": "DESCENDING" }
-      ]
-    },
-    {
-      "collectionGroup": "gameStats",
-      "queryScope": "COLLECTION_GROUP",
-      "fields": [
-        { "fieldPath": "gameDate", "order": "DESCENDING" }
-      ]
-    },
-    {
       "collectionGroup": "depthCharts",
       "queryScope": "COLLECTION",
       "fields": [
@@ -61,13 +26,6 @@
       ]
     },
     {
-      "collectionGroup": "agentSessions",
-      "queryScope": "COLLECTION",
-      "fields": [
-        { "fieldPath": "createdAt", "order": "ASCENDING" }
-      ]
-    },
-    {
       "collectionGroup": "chatRooms",
       "queryScope": "COLLECTION",
       "fields": [
@@ -76,10 +34,19 @@
       ]
     },
     {
-      "collectionGroup": "messages",
+      "collectionGroup": "broadcasts",
       "queryScope": "COLLECTION",
       "fields": [
-        { "fieldPath": "sentAt", "order": "ASCENDING" }
+        { "fieldPath": "recipientUids", "arrayConfig": "CONTAINS" },
+        { "fieldPath": "createdAt", "order": "DESCENDING" }
+      ]
+    },
+    {
+      "collectionGroup": "broadcasts",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "senderUid", "order": "ASCENDING" },
+        { "fieldPath": "createdAt", "order": "DESCENDING" }
       ]
     }
   ],

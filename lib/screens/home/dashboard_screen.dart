@@ -3,6 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:intl/intl.dart';
 import '../../providers/announcements_provider.dart';
+import '../../providers/auth_provider.dart';
+import '../../providers/broadcast_provider.dart';
 import '../../providers/games_provider.dart';
 import '../../providers/strength_provider.dart';
 import '../../theme/diablo_colors.dart';
@@ -20,6 +22,13 @@ class DashboardScreen extends ConsumerWidget {
     final gamesAsync = ref.watch(gamesProvider(null));
     final workoutAsync = ref.watch(currentWorkoutProvider);
     final announcementsAsync = ref.watch(announcementsProvider);
+    final inboxAsync = ref.watch(broadcastInboxProvider);
+    final currentUid = ref.watch(currentUidProvider);
+    final unreadBroadcasts = inboxAsync.maybeWhen(
+      data: (items) =>
+          items.where((b) => !b.readBy.contains(currentUid)).length,
+      orElse: () => 0,
+    );
 
     return Scaffold(
       appBar: const DiabloAppBar(),
@@ -236,6 +245,61 @@ class DashboardScreen extends ConsumerWidget {
                   _buildQuickLink(Icons.groups, 'Coaches'),
                   _buildQuickLink(Icons.sports_football, 'Camps'),
                 ],
+              ),
+            ),
+
+            // Broadcasts inbox entry
+            Padding(
+              padding: const EdgeInsets.fromLTRB(16, 8, 16, 0),
+              child: GestureDetector(
+                onTap: () => context.push('/broadcasts'),
+                child: Container(
+                  padding: const EdgeInsets.all(16),
+                  decoration: BoxDecoration(
+                    color: DiabloColors.darkCard,
+                    borderRadius: BorderRadius.circular(8),
+                    border: Border(
+                      left: BorderSide(color: DiabloColors.gold, width: 3),
+                    ),
+                  ),
+                  child: Row(
+                    children: [
+                      const Icon(Icons.campaign, color: DiabloColors.gold),
+                      const SizedBox(width: 12),
+                      const Expanded(
+                        child: Text(
+                          'Broadcasts',
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontWeight: FontWeight.w600,
+                            fontSize: 15,
+                          ),
+                        ),
+                      ),
+                      if (unreadBroadcasts > 0)
+                        Container(
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 8, vertical: 3),
+                          decoration: const BoxDecoration(
+                            color: DiabloColors.red,
+                            borderRadius:
+                                BorderRadius.all(Radius.circular(12)),
+                          ),
+                          child: Text(
+                            '$unreadBroadcasts new',
+                            style: const TextStyle(
+                              color: Colors.white,
+                              fontSize: 11,
+                              fontWeight: FontWeight.w700,
+                            ),
+                          ),
+                        ),
+                      const SizedBox(width: 6),
+                      const Icon(Icons.chevron_right,
+                          color: Colors.white38),
+                    ],
+                  ),
+                ),
               ),
             ),
 

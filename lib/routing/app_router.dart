@@ -6,6 +6,10 @@ import '../providers/auth_provider.dart';
 import '../screens/admin/admin_hub_screen.dart';
 import '../screens/admin/invite_user_screen.dart';
 import '../screens/admin/post_announcement_screen.dart';
+import '../screens/admin/broadcast_oversight_screen.dart';
+import '../screens/broadcast/broadcast_list_screen.dart';
+import '../screens/broadcast/compose_broadcast_screen.dart';
+import '../screens/broadcast/broadcast_detail_screen.dart';
 import '../screens/auth/forgot_password_screen.dart';
 import '../screens/auth/login_screen.dart';
 import '../screens/auth/register_screen.dart';
@@ -186,6 +190,22 @@ final routerProvider = Provider<GoRouter>((ref) {
         path: '/chat/new',
         builder: (context, state) => const NewChatScreen(),
       ),
+
+      // ── Compliant Broadcasts (one-to-many, role-targeted) ────
+      GoRoute(
+        path: '/broadcasts/new',
+        builder: (context, state) => const ComposeBroadcastScreen(),
+      ),
+      GoRoute(
+        path: '/broadcasts/:broadcastId',
+        builder: (context, state) => BroadcastDetailScreen(
+          broadcastId: state.pathParameters['broadcastId']!,
+        ),
+      ),
+      GoRoute(
+        path: '/broadcasts',
+        builder: (context, state) => const BroadcastListScreen(),
+      ),
       GoRoute(
         path: '/chat/:roomId/info',
         builder: (context, state) => GroupInfoScreen(
@@ -259,6 +279,10 @@ final routerProvider = Provider<GoRouter>((ref) {
       GoRoute(
         path: '/admin/invite',
         builder: (context, state) => const InviteUserScreen(),
+      ),
+      GoRoute(
+        path: '/admin/oversight',
+        builder: (context, state) => const BroadcastOversightScreen(),
       ),
       GoRoute(
         path: '/admin',
