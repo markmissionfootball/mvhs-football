@@ -176,5 +176,88 @@ service cloud.firestore {
         allow delete: if false;
       }
     }
+
+    // ─── Compliant Broadcasts (one-to-many, role-targeted) ──
+    //
+    // Oversight model — the opposite of the E2E chat above. Broadcasts are
+    // plaintext and admin-auditable on purpose: transparency is the
+    // student-safety mechanism. Sends go exclusively through the
+    // `sendBroadcast` Cloud Function (Admin SDK bypasses these rules), so
+    // clients are NOT allowed to create broadcasts directly — that's what
+    // guarantees server-side role-only audience resolution and audit logging.
+
+    function isMuted() {
+      return exists(/databases/$(database)/documents/mutes/$(request.auth.uid));
+    }
+
+    match /broadcasts/{broadcastId} {
+      // Recipients can read broadcasts addressed to them; staff read all.
+      allow read: if isSignedIn() &&
+        (isCoach() || request.auth.uid in resource.data.recipientUids);
+
+      // Only the Cloud Function creates/sends broadcasts.
+      allow create: if false;
+
+      // Members may only append themselves to readBy (read receipts). Staff may
+      // update freely (e.g. delivery counters are functions-only, but coaches
+      // managing their own sends stay permitted).
+      allow update: if isSignedIn() && (
+        isCoach() ||
+        (
+          request.auth.uid in resource.data.recipientUids &&
+          request.resource.data.diff(resource.data).affectedKeys()
+            .hasOnly(['readBy']) &&
+          request.resource.data.readBy.hasAll(resource.data.readBy)
+        )
+      );
+
+      allow delete: if false;
+
+      // ── Public group replies ──
+      match /replies/{replyId} {
+        // Anyone who can read the parent broadcast can read its replies.
+        allow read: if isSignedIn() && (
+          isCoach() ||
+          request.auth.uid in
+            get(/databases/$(database)/documents/broadcasts/$(broadcastId)).data.recipientUids
+        );
+
+        // Recipients (and staff) may post, as themselves, if the broadcast
+        // allows replies and they are not muted. No private reply path exists —
+        // every reply lands in this group-visible collection.
+        allow create: if isSignedIn() &&
+          !isMuted() &&
+          request.resource.data.senderUid == request.auth.uid &&
+          get(/databases/$(database)/documents/broadcasts/$(broadcastId)).data.allowReplies == true &&
+          (
+            isCoach() ||
+            request.auth.uid in
+              get(/databases/$(database)/documents/broadcasts/$(broadcastId)).data.recipientUids
+          );
+
+        // Only staff moderate, and only by soft-deleting (set deleted=true).
+        // Replies are never hard-deleted — admins retain the full record.
+        allow update: if isCoach() &&
+          request.resource.data.diff(resource.data).affectedKeys()
+            .hasOnly(['deleted', 'deletedBy', 'deletedReason']) &&
+          request.resource.data.deleted == true;
+
+        allow delete: if false;
+      }
+    }
+
+    // ─── Mutes (reply suppression) ──────────────────────────
+    // Existence of mutes/{uid} blocks that user from posting replies.
+    match /mutes/{uid} {
+      allow read: if isSignedIn() && (isOwner(uid) || isCoach());
+      allow write: if isCoach();
+    }
+
+    // ─── Message Audit Log (append-only oversight) ──────────
+    // Written only by Cloud Functions; admins read; no one edits or deletes.
+    match /messageAudit/{eventId} {
+      allow read: if isAdmin();
+      allow write: if false;
+    }
   }
 }

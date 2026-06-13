@@ -35,9 +35,20 @@ class AdminHubScreen extends ConsumerWidget {
           children: [
             _AdminTile(
               icon: Icons.campaign,
+              label: 'SEND BROADCAST',
+              onTap: () => context.push('/broadcasts/new'),
+            ),
+            _AdminTile(
+              icon: Icons.notifications_active,
               label: 'POST ANNOUNCEMENT',
               onTap: () => context.push('/admin/announcement'),
             ),
+            if (isAdmin)
+              _AdminTile(
+                icon: Icons.shield,
+                label: 'MESSAGE OVERSIGHT',
+                onTap: () => context.push('/admin/oversight'),
+              ),
             if (isAdmin)
               _AdminTile(
                 icon: Icons.person_add,

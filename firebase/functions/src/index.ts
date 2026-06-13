@@ -6,6 +6,15 @@ import { sendScheduledNotifications } from "./notifications/scheduler";
 import { aggregateDailyMetrics } from "./analytics/aggregator";
 import { onNewChatMessage } from "./chat/onNewMessage";
 import { validateChatRoom } from "./chat/validateChatRoom";
+import {
+  sendBroadcast,
+  previewBroadcastAudience,
+} from "./broadcast/sendBroadcast";
+import {
+  onNewBroadcastReply,
+  onBroadcastReplyUpdated,
+} from "./broadcast/onReply";
+import { onMuteWritten } from "./broadcast/onMute";
 
 admin.initializeApp();
 
@@ -65,3 +74,13 @@ export { onNewChatMessage };
 
 // Callable: validates participants before chat room creation
 export { validateChatRoom };
+
+// ─── Compliant Broadcasts (one-to-many, role-targeted) ──────
+// Oversight-first messaging: coaches/admins address roles (never individuals),
+// replies are public to the group, and every action is audit-logged.
+//
+// Callables: send a broadcast / preview an audience's recipient count.
+export { sendBroadcast, previewBroadcastAudience };
+
+// Firestore triggers: notify + audit on reply, audit on reply removal & mute.
+export { onNewBroadcastReply, onBroadcastReplyUpdated, onMuteWritten };
